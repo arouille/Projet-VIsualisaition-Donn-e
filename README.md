@@ -1,4 +1,4 @@
-# :bar_chart: Projet-Visualisation Donnée :bar_chart:
+# :bar_chart: Projet Visualisation Donnée :bar_chart:
 
 Ce Projet à pour but de visualiser les données du dataset Iris :hibiscus:. </br>
 Cette visualisation se fera via une page Web grace a flask.
