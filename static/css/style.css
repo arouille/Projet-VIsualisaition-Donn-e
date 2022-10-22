@@ -1,0 +1,327 @@
+body{
+ overflow-y:hidden;
+ font-family:"trebuchet ms",sans-serif;
+ font-size:100%;
+ background-color : #EAEDED;
+ margin:30px;
+  overflow-x:hidden;
+
+ }
+ 
+
+ 
+texte {
+
+text-align :start;
+ 
+}
+
+.description {
+
+position :absolute;
+text-align :center;
+border : 1rem solid white;
+width:275px;
+height :300px;
+margin-top : 1em;
+ 
+}
+
+legend {
+ color:#bede75;
+ font-weight:bold
+ }
+ 
+label {
+ margin-top:10px;
+ display:block;
+ }
+
+input, textarea, select, option {
+ background-color:#E5E7E9;
+ }
+	
+input, textarea, select {
+
+ padding:3px;
+ border:1px solid #bede75;
+ border-radius:5px;
+ width:200px;
+ }
+ 
+ textarea {
+ 
+	width: auto; 
+    font-size: 18px;
+    resize: none;
+
+}
+
+
+input[type=radio], input[type=checkbox] {
+ background-color:transparent;
+ width:10px;
+ 
+}
+
+
+.checkedbox
+{
+	position : relative;
+	width : 65%;
+	margin-left : 17em;
+	margin-top : -10em;
+
+}
+
+.check1 , .check2 , .check3{
+	padding : 4px;
+	
+
+}
+
+.check1{
+	margin-left:11em;
+}
+fieldset [name=coor]{
+	position : relative ;
+	background-color : black;
+
+}
+
+input[type=submit], input[type=reset] {
+	 width:100px;
+	 margin-left:5px;
+	 box-shadow:1px 1px 1px #bede75;
+	 cursor:pointer;
+	 
+ }
+ 
+ input[type=submit], input[type=reset]:hover {
+	  background: #5cbf2a
+	 
+ }
+ 
+h1 {
+	
+	margin : 0 auto;
+	text-align :center;
+	
+}
+
+h2 {
+	
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.button {
+
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #76DE67;
+  padding: 1em 2em;
+  border: none;
+  color: black;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+.button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #76DE67, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.button:hover::before {
+  --size: 400px;
+}
+
+
+
+.card {
+    position:relative;
+	top :200px;
+	margin-bottom :500px;
+    transform:translate(-50%,-50%);
+    width:750px;
+    height: 350px;
+    min-height:400px;
+    background:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+	opacity: .95;
+	
+
+}
+
+.card:hover {
+     box-shadow:5px 5px 21px 5px rgba(0,0,0,0.54)
+
+}
+.card .box {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    width:100%;
+    font-size : 15px;
+    
+    
+}
+.card .box .img {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+.card .box .img img {
+    width:100%;
+    height:100%;
+}
+.card .box h2 {
+    font-size:30px;
+    color:#262626;
+    margin:20px auto;
+}
+.card .box h2 span {
+    font-size:20px;
+    background:#e91e63;
+    color:#fff;
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:15px;
+}
+.card .box p {
+    color:#262626;
+}
+.card .box span {
+    display:inline-flex;
+}
+.card .box ul {
+    margin:0;
+    padding:0;
+}
+.card .box ul li {
+    list-style:none;
+    float:left;
+}
+.card .box ul li a {
+    display:block;
+    color:#aaa;
+    margin:0 10px;
+    font-size:20px;
+    transition:0.5s;
+    text-align:center;
+}
+.card .box ul li:hover a {
+    color:#e91e63;
+    transform:rotateY(360deg);
+}
+
+.jumbotron{margin-bottom: 0; position: relative;}
+
+.parallax {
+  /* Set a specific height */
+  height:1000px;
+  padding-bottom : -100px;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
+/* Paragraph for Parallax Section */ 
+.parallax p {
+font-size: 30px;
+color:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+ 
+/* Heading for Parallax Section */ 
+.parallax h1 {
+text-transform: uppercase;
+color: white;
+font-size: 60px;
+text-align: center;
+padding-top: 10px;
+line-height: 100px;
+}
+
+#parallax-static {
+
+  background-image: url('/static/fond.png');
+  
+
+    
+}    
+
+
+#parallax-slightly-moving {
+  background-image: url('/static/fond.png');
+  
+
+
+}
+#parallax-slightly-moving::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+
+

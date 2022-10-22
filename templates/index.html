@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+	<head>   
+      <meta charset="utf-8"/>
+	  <?php header("Cache-Control:no-cache");?>
+
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <script type="text/javascript" src="js.js"></script>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="shortcut icon" href="img/icon.png">
+		<title>Iris Prediction</title>
+		
+      <META HTTP-EQUIV='Pragma' CONTENT='no-cache'">
+      <META HTTP-EQUIV="Expires" CONTENT="-1">
+	</head>
+	<body>
+      <div class="jumbotron parallax" id="parallax-static">
+         <div style="background-color :#5fa536; opacity :.95; border: 5px outset #75CB42; " class="jumbotron bg-cover text-white">
+            <div class="container py-0 text-center ">
+               <h3 class="article-title animate__animated animate__fadeIn">Bienvenue sur Iris Prediction</h3>
+               <p class="font-italic mb-0 animate__animated animate__fadeIn" style="color :white">Merci de compléter le formulaire</p>
+               </a>
+               </p>
+            </div>
+         </div>
+		 
+		 
+         <form action="http://localhost:5000/resultat" method="get" >
+               <div class="card" style="left:25%;">
+                  <div class="box">
+				  
+                     <form action="" class="m-auto" style="max-width:800px">
+                        <hr class="my-4" />
+                  
+                        <div class="form-group mb-5 row"><label for="Largeur" class="col-md-3 col-form-label" >&emsp;Largeur pétal Iris : </label>
+                           <div class="col-md-4"><input type="text" class="form-control form-control-lg" placeholder="Largeur" id="largeur" name="largeur"  required></div>
+                        </div>
+                     
+                        <div class="form-group mb-5 row"><label for="Longeur" class="col-md-3 col-form-label"> Longeur pétal Iris :</label>
+                           <div class="col-md-4"><input type="text" class="form-control form-control-lg" id="Longeur" placeholder="longueur" name="longueur" required></div>
+                        </div>
+
+                        <hr class="my-4" />
+                        <div class="form-group mb-3 row"><label for="send-a-message9" class="col-md-5 col-form-label"></label>
+                        <button class="button" type="submit" value="Envoyer">
+                        <span>ENVOYER</span>
+                        </button>
+                        </div>
+                  
+		               </form>
+				      </div>
+		         </div>
+            
+	   	</form>
+		
+		
+                        <div class="card" style="left:75%;top:-700px;width:550px; ">
+                           <div class="box">
+                     				  
+                              <hr class="my-4" />
+                             	<div class="texte"> 
+                                    Ce Projet à pour but de visualiser les données du dataset Iris 🌺. </br>
+                                    Cette visualisation se fera via une page Web grace a flask.</br></br></br>
+            
+                                     📋 Objectifs :</br></br></br>
+            
+                                      - Visualition graphique des espèces d'iris en fonction des features</br></br>
+                                      - Prédiction d'espece d'iris en fonction d'une entrée utilisateur de longeur et &nbsp;&nbsp; largeur de pétale ( petal length , petal width )</br></br>
+                                      - Affichage de cette prédiction sur le graphique</br>	</br>
+                              
+                           </div>
+                        </div>
+      </div>
+
+        
+
+
+
+	</body>
+</html>

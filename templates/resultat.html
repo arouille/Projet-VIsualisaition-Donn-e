@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+	<head>   
+      <meta charset="utf-8"/>
+
+
+	  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <script type="text/javascript" src="js.js"></script>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="shortcut icon" href="img/icon.png">
+      
+      
+      <META HTTP-EQUIV='Pragma' CONTENT='no-cache'">
+      <META HTTP-EQUIV="Expires" CONTENT="-1">
+		<title>Iris Prediction</title>
+	</head>
+	
+	<body>
+      <div class="jumbotron parallax" id="parallax-static">
+         <div style="background-color :#5fa536; opacity :.95; border: 5px outset #75CB42; " class="jumbotron bg-cover text-white">
+            <div class="container py-0 text-center ">
+               <h2 class="display-3 animate__animated animate__fadeIn">Bienvenue sur Iris Prediction</h2>
+               <p class="font-italic mb-0 animate__animated animate__fadeIn" style="color :white"> </p>
+               </a>
+               </p>
+               
+            </div>
+         </div>
+		 
+		 
+            <div class="animate__animated  animate__zoomIn">
+               <div class="card" style="left:25%;">
+                  <div class="box">
+
+                      <img src="{{url_for('static', filename='graph.jpg')}}"  />
+         </div>
+		 
+		 </form>
+				</div>
+			</div>
+         </div>
+		
+		<div class="animate__animated  animate__zoomIn">
+                        <div class="card" style="left:78%;top:-600px;width:650px; ">
+                           <div class="box">
+                     				                      
+                                    
+                                        <div class="description"> 
+                                        <h1>{{titre}}</h1>
+                                        <hr>
+                                        {{Description}}
+                                         </div>
+                                        <img src="static/{{image}}" style ="margin-left: 19em; margin-bottom :1em" />                            
+                                
+                          </div>
+                        </div>
+         </div>
+
+        
+
+
+
+	</body>
+</html>
